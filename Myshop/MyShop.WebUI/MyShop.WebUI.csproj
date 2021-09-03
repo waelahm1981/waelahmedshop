@@ -170,6 +170,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProductMangerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -235,6 +236,10 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\ProductManger\Index.cshtml" />
+    <Content Include="Views\ProductManger\Create.cshtml" />
+    <Content Include="Views\ProductManger\Edit.cshtml" />
+    <Content Include="Views\ProductManger\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -251,6 +256,24 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Myshop.DataAccess.Inmemory\Myshop.DataAccess.Inmemory.csproj">
+      <Project>{e1ba47f8-af41-4ef8-891d-84ec7991453b}</Project>
+      <Name>Myshop.DataAccess.Inmemory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Myshop.Dataaccess.Sql\Myshop.Dataaccess.Sql.csproj">
+      <Project>{c163a8de-60d9-4759-a9bb-1943200f7778}</Project>
+      <Name>Myshop.Dataaccess.Sql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mysop.Core\Mysop.Core.csproj">
+      <Project>{fd7d040f-5c6d-417c-90c4-b29d0ee8585a}</Project>
+      <Name>Mysop.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mysops.Services\Mysops.Services.csproj">
+      <Project>{72d864ed-0a0c-4a65-bc4a-b26a8980b78b}</Project>
+      <Name>Mysops.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

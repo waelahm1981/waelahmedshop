@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace Myshop.DataAccess.Inmemory
 {
-    class ProductRepesotry
+    public class ProductRepesotry
     {
         ObjectCache cache = MemoryCache.Default;
         List<Product> products = new List<Product>(); 

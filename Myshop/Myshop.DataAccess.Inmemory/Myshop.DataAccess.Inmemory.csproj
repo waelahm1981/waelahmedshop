@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -9,7 +9,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Myshop.Dataaccess.Sql\Myshop.Dataaccess.Sql.csproj" />
     <ProjectReference Include="..\Mysop.Core\Mysop.Core.csproj" />
+    <ProjectReference Include="..\Mysops.Services\Mysops.Services.csproj" />
   </ItemGroup>
 
 </Project>
